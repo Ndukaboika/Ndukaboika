@@ -1,7 +1,6 @@
 ---
 title: "dashboard"
 format: dashboard
-
 ---
 
 ```{r}
@@ -11,7 +10,6 @@ library(highcharter)
 library(lubridate)
 library(dplyr)
 ```
-
 
 ```{r}
 
@@ -49,6 +47,7 @@ hchart(
 
 ```
 
+
 ```{r}
 library(highcharter)
 library(dplyr)
@@ -68,4 +67,3 @@ hc <- hchart(data, "column", hcaes(x = color, y = n, group = cut)) |>
 hc
 
 ```
-

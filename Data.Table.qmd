@@ -45,5 +45,5 @@ nhanes[, .(Age, Age*2)] # produce two columns
 setkeyv(nhanes, "SurveyYr")
 nhanes["Gender", .N]
 
-  ```
+```
 
