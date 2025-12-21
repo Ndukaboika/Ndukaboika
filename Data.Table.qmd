@@ -1,0 +1,49 @@
+---
+title: "Data wrangling with data.frame"
+author: "Nduka Boika"
+---
+
+Data is as important as the statistical methods used to analyse the data. Infact some statistical methods were developed based on data structures. An example is multilevel models for longitudinal and multilevels data. However, before you can use the data in statistical analysis it has to be valid or clean. For this tutorial, we will use the `data.table` package in R.
+
+## Load libraries
+
+Firstly we want to load the necessary libraries. `library(data.table)` and `library(NHANES)`. NHANES is the dataset we will use for this tutorial.
+
+:::{note}
+You must install a package before you can load it. For example, to install the `data.table` package, run `install.packages("data.table")`.
+:::
+
+```{r}
+library(data.table)
+#View(eurosoccer)
+library(NHANES)
+```
+
+## Explore the dataset
+
+```{r}
+nhanes <- data.table(NHANES)
+tables(nhanes) # gives the lists of data.tables with dimension information.
+nhanes # to view the dataset
+```
+
+We can order the dataset by a particular row 
+
+```{r}
+nhanes[1] # gives information for the 1 row or participant.
+nhanes[Age > 5] # if you want dataset for values of Age > 5
+nhanes[!1:3] # if we are not interested in rows 1-3. nhanes[-(1:3)]
+```
+
+We can order the dataset by a particular column
+
+```{r}
+nhanes[order(Age)] #sorting or ordering by the age column.
+nhanes[, list(Age)] # Age as a vector.
+nhanes[, .(sum(Age))] # sum the values of Age.
+nhanes[, .(Age, Age*2)] # produce two columns
+setkeyv(nhanes, "SurveyYr")
+nhanes["Gender", .N]
+
+  ```
+

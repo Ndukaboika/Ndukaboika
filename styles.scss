@@ -1,0 +1,25 @@
+/*-- scss:defaults --*/
+
+/* Colors */
+$body-bg: #d3d3d3;         // light gray background
+$body-color: #000000;      // black text
+$link-color: #000000;      // black links
+
+/* Fonts */
+$font-family-sans-serif: "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-size-root: 14px;
+
+/* Headings contrast */
+$headings-color: #000000;
+
+/* Navbar (white for contrast) */
+.navbar {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Footer */
+footer {
+  background-color: #d3d3d3;
+  color: #000000;
+}

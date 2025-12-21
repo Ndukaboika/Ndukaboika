@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Nduka"
+  open-graph: true
+  page-footer: "Made with ❤️ and Quarto"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: dashboard.qmd
+        text: Data Viz
+
+format:
+  html:
+    theme: [cosmo, styles.scss]     # use SCSS for customization
+    mainfont: "serif"
+    fontsize: 18px
+    linkcolor: "black"
+    backgroundcolor: "#D3D3D3"
+    fontcolor: "black"

@@ -1,0 +1,71 @@
+---
+title: "dashboard"
+format: dashboard
+
+---
+
+```{r}
+library(data.table)
+library(palmerpenguins)
+library(highcharter)
+library(lubridate)
+library(dplyr)
+```
+
+
+```{r}
+
+example_dat <- tibble(
+  Type = c("Human", "High-Elf", "Orc"), 
+  key = c("World1", "World2", "World3")
+  ) %>% 
+  expand.grid() %>% 
+  mutate(mean = runif(9, 5, 7)) %>% 
+  mutate(sd = runif(9, 0.5, 1)) 
+
+hchart(
+  example_dat, 
+  "column",
+  hcaes(x = key, y = mean, group = Type),
+  id = c("a", "b", "c")
+  ) %>%
+  
+  hc_add_series(
+    example_dat,
+    "errorbar", 
+    hcaes(y = mean, x = key, low = mean - sd, high = mean + sd, group = Type),
+    linkedTo = c("a", "b", "c"),
+    enableMouseTracking = TRUE,
+    showInLegend = FALSE
+    ) %>% 
+  
+  hc_plotOptions(
+    errorbar = list(
+      color = "black", 
+      # whiskerLength = 1,
+      stemWidth = 1
+    ) 
+  ) 
+
+```
+
+```{r}
+library(highcharter)
+library(dplyr)
+
+data(diamonds, package = "ggplot2")
+
+data <- count(diamonds, cut, color)
+
+hc <- hchart(data, "column", hcaes(x = color, y = n, group = cut)) |>
+  hc_yAxis(title = list(text = "Cases")) |>
+  hc_title(text = "Diamonds Are Forever") |>
+  hc_subtitle(text = "Source: Diamonds data set") |>
+  hc_credits(enabled = TRUE, text = "http://jkunst.com/highcharter/") |>
+  hc_tooltip(sort = TRUE, table = TRUE) |> 
+  hc_caption(text = "This is a caption text to show the style of this type of text")
+
+hc
+
+```
+
