@@ -14,5 +14,4 @@ about: # https://quarto.org/docs/websites/website-about.html
       href: https://linkedin.com
 ---
 
-
 Hello! I’m Nduka Boika, a doctoral student in Educational Psychology at the University of North Texas and a Graduate Student Assistant with the Office of Research Consulting. Here I share reflections and hands-on applications of the methods I’m learning. This is my first website, so it’s a work in progress and will improve over time. My current interests include Structural Equation Modeling (SEM), Hierarchical Linear Modeling (HLM), and meta-analysis. If you have resources—books, articles, conferences, webinars, or trainings—please reach out at `Nduka.boika@unt.edu`. In my free time, I enjoy movies and soccer.

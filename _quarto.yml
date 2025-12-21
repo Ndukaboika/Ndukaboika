@@ -1,6 +1,7 @@
 project:
   type: website
-  output-dir: docs
+
+output-dir: docs
 
 website:
   title: "Nduka"
@@ -8,14 +9,16 @@ website:
   page-footer: "Made with ❤️ and Quarto"
   navbar:
     right:
-      - href: index.qmd
-        text: Home
-      - href: dashboard.qmd
-        text: Data Viz
+      - text: Home
+        href: index.qmd
+      - text: Data Viz
+        href: dashboard.qmd
+      - text: Blog
+        href: blog/
 
 format:
   html:
-    theme: [cosmo, styles.scss]     # use SCSS for customization
+    theme: [cosmo, styles.scss]   # use SCSS for customization
     mainfont: "serif"
     fontsize: 18px
     linkcolor: "black"
