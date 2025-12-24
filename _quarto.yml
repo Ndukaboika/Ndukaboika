@@ -14,13 +14,17 @@ website:
       - text: Data Viz
         href: dashboard.qmd
       - text: Blog
-        href: blog
+        menu:
+          - text: RCT
+            href: RCTs.qmd
+          - text: Regression
+            href: Regression.qmd
 
 format:
   html:
-    theme: [cosmo, styles.scss]   # use SCSS for customization
-    mainfont: "serif"
+    theme: [cosmo, styles.scss]
+    mainfont: serif
     fontsize: 18px
-    linkcolor: "black"
+    linkcolor: black
     backgroundcolor: "#D3D3D3"
-    fontcolor: "black"
+    fontcolor: black

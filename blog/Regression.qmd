@@ -1,0 +1,10 @@
+---
+title: "Understanding Regression"
+author: "Nduka"
+date: "today"
+categories: [Regression]
+format:
+  html:
+    toc: true
+    page-layout: article
+---

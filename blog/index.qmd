@@ -1,0 +1,5 @@
+---
+title: blog
+listing: true
+page-layout: article
+---

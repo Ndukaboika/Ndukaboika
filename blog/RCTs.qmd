@@ -1,6 +1,12 @@
 ---
-title: "Rambling"
+title: "Understanding Randomized Controlled Trials"
 author: "Nduka"
+date: "today"
+categories: [RCTs, Methods]
+format:
+  html:
+    toc: true
+    page-layout: article
 ---
 
 This is me just thinking aloud and documenting the random thoughts that's on my mind.
