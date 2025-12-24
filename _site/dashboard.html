@@ -36,10 +36,22 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bd263b0456d03d9163c032fb0c3f4069.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b9749f96387d2deb89c0c76a2e567d85.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b9749f96387d2deb89c0c76a2e567d85.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b9749f96387d2deb89c0c76a2e567d85.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-dashboard/quarto-dashboard.js"></script>
+<script src="site_libs/quarto-dashboard/stickythead.js"></script>
+
+
+
+<script src="site_libs/quarto-dashboard/web-components.js" type="module"></script>
+<script src="site_libs/quarto-dashboard/components.js"></script>
+
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,7 +129,8 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:site_name" content="Nduka">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="quarto-dashboard nav-fixed dashboard-fill fullcontent quarto-light">
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -143,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Data Viz</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/"> 
+    <a class="nav-link" href="./blog"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -152,50 +165,66 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-</header>
+<header id="quarto-dashboard-header">
+<nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
+  <div class="navbar-container container-fluid">
+    <button class="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+
+
+    <div class="navbar-brand-container">       
+
+      <div class="navbar-title">
+        <div class="navbar-title-text"><a href="#">dashboard</a></div>
+        
+        
+      </div>
+    </div>
+</div>
+</nav>
+</header></header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">dashboard</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="cell">
-<div class="cell-output-display">
-<div class="highchart html-widget html-fill-item" id="htmlwidget-9ed9a1a8d9ab78ce8b74" style="width:100%;height:406px;"></div>
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="highchart html-widget html-fill-item html-fill-container" id="htmlwidget-9ed9a1a8d9ab78ce8b74" style="width:100%;height:406px;"></div>
 <script type="application/json" data-for="htmlwidget-9ed9a1a8d9ab78ce8b74">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":null},"yAxis":{"title":{"text":"mean"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"errorbar":{"color":"black","stemWidth":1}},"series":[{"name":"Human","data":[{"Type":"Human","key":"World1","mean":6.600671865046024,"sd":0.9763785476097837,"y":6.600671865046024,"name":"World1"},{"Type":"Human","key":"World2","mean":6.838170703966171,"sd":0.8114961129613221,"y":6.838170703966171,"name":"World2"},{"Type":"Human","key":"World3","mean":6.516422609332949,"sd":0.8029617535648867,"y":6.516422609332949,"name":"World3"}],"type":"column","id":"a"},{"name":"High-Elf","data":[{"Type":"High-Elf","key":"World1","mean":5.63494988810271,"sd":0.5570076579460874,"y":5.63494988810271,"name":"World1"},{"Type":"High-Elf","key":"World2","mean":6.752769274171442,"sd":0.915295003214851,"y":6.752769274171442,"name":"World2"},{"Type":"High-Elf","key":"World3","mean":6.563173173926771,"sd":0.8113699050154537,"y":6.563173173926771,"name":"World3"}],"type":"column","id":"b"},{"name":"Orc","data":[{"Type":"Orc","key":"World1","mean":5.672469185199589,"sd":0.9803258135216311,"y":5.672469185199589,"name":"World1"},{"Type":"Orc","key":"World2","mean":6.056956038344651,"sd":0.8855837141163647,"y":6.056956038344651,"name":"World2"},{"Type":"Orc","key":"World3","mean":5.234438042156398,"sd":0.993230854975991,"y":5.234438042156398,"name":"World3"}],"type":"column","id":"c"},{"name":"Human","data":[{"Type":"Human","key":"World1","mean":6.600671865046024,"sd":0.9763785476097837,"y":6.600671865046024,"low":5.624293317436241,"high":7.577050412655808,"name":"World1"},{"Type":"Human","key":"World2","mean":6.838170703966171,"sd":0.8114961129613221,"y":6.838170703966171,"low":6.026674591004848,"high":7.649666816927493,"name":"World2"},{"Type":"Human","key":"World3","mean":6.516422609332949,"sd":0.8029617535648867,"y":6.516422609332949,"low":5.713460855768062,"high":7.319384362897836,"name":"World3"}],"type":"errorbar","linkedTo":"a","enableMouseTracking":true,"showInLegend":false},{"name":"High-Elf","data":[{"Type":"High-Elf","key":"World1","mean":5.63494988810271,"sd":0.5570076579460874,"y":5.63494988810271,"low":5.077942230156623,"high":6.191957546048798,"name":"World1"},{"Type":"High-Elf","key":"World2","mean":6.752769274171442,"sd":0.915295003214851,"y":6.752769274171442,"low":5.837474270956591,"high":7.668064277386293,"name":"World2"},{"Type":"High-Elf","key":"World3","mean":6.563173173926771,"sd":0.8113699050154537,"y":6.563173173926771,"low":5.751803268911317,"high":7.374543078942224,"name":"World3"}],"type":"errorbar","linkedTo":"b","enableMouseTracking":true,"showInLegend":false},{"name":"Orc","data":[{"Type":"Orc","key":"World1","mean":5.672469185199589,"sd":0.9803258135216311,"y":5.672469185199589,"low":4.692143371677957,"high":6.65279499872122,"name":"World1"},{"Type":"Orc","key":"World2","mean":6.056956038344651,"sd":0.8855837141163647,"y":6.056956038344651,"low":5.171372324228287,"high":6.942539752461016,"name":"World2"},{"Type":"Orc","key":"World3","mean":5.234438042156398,"sd":0.993230854975991,"y":5.234438042156398,"low":4.241207187180407,"high":6.227668897132389,"name":"World3"}],"type":"errorbar","linkedTo":"c","enableMouseTracking":true,"showInLegend":false}],"xAxis":{"type":"category","title":{"text":"key"},"categories":null}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-<div class="cell">
-<div class="cell-output-display">
-<div class="highchart html-widget html-fill-item" id="htmlwidget-96f2adc8294a66c49308" style="width:100%;height:406px;"></div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="highchart html-widget html-fill-item html-fill-container" id="htmlwidget-96f2adc8294a66c49308" style="width:100%;height:406px;"></div>
 <script type="application/json" data-for="htmlwidget-96f2adc8294a66c49308">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Diamonds Are Forever"},"yAxis":{"title":{"text":"Cases"},"type":"linear"},"credits":{"enabled":true,"text":"http://jkunst.com/highcharter/"},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"Fair","data":[{"cut":"Fair","colorv":"D","n":163,"y":163,"name":"D"},{"cut":"Fair","colorv":"E","n":224,"y":224,"name":"E"},{"cut":"Fair","colorv":"F","n":312,"y":312,"name":"F"},{"cut":"Fair","colorv":"G","n":314,"y":314,"name":"G"},{"cut":"Fair","colorv":"H","n":303,"y":303,"name":"H"},{"cut":"Fair","colorv":"I","n":175,"y":175,"name":"I"},{"cut":"Fair","colorv":"J","n":119,"y":119,"name":"J"}],"type":"column"},{"name":"Good","data":[{"cut":"Good","colorv":"D","n":662,"y":662,"name":"D"},{"cut":"Good","colorv":"E","n":933,"y":933,"name":"E"},{"cut":"Good","colorv":"F","n":909,"y":909,"name":"F"},{"cut":"Good","colorv":"G","n":871,"y":871,"name":"G"},{"cut":"Good","colorv":"H","n":702,"y":702,"name":"H"},{"cut":"Good","colorv":"I","n":522,"y":522,"name":"I"},{"cut":"Good","colorv":"J","n":307,"y":307,"name":"J"}],"type":"column"},{"name":"Very Good","data":[{"cut":"Very Good","colorv":"D","n":1513,"y":1513,"name":"D"},{"cut":"Very Good","colorv":"E","n":2400,"y":2400,"name":"E"},{"cut":"Very Good","colorv":"F","n":2164,"y":2164,"name":"F"},{"cut":"Very Good","colorv":"G","n":2299,"y":2299,"name":"G"},{"cut":"Very Good","colorv":"H","n":1824,"y":1824,"name":"H"},{"cut":"Very Good","colorv":"I","n":1204,"y":1204,"name":"I"},{"cut":"Very Good","colorv":"J","n":678,"y":678,"name":"J"}],"type":"column"},{"name":"Premium","data":[{"cut":"Premium","colorv":"D","n":1603,"y":1603,"name":"D"},{"cut":"Premium","colorv":"E","n":2337,"y":2337,"name":"E"},{"cut":"Premium","colorv":"F","n":2331,"y":2331,"name":"F"},{"cut":"Premium","colorv":"G","n":2924,"y":2924,"name":"G"},{"cut":"Premium","colorv":"H","n":2360,"y":2360,"name":"H"},{"cut":"Premium","colorv":"I","n":1428,"y":1428,"name":"I"},{"cut":"Premium","colorv":"J","n":808,"y":808,"name":"J"}],"type":"column"},{"name":"Ideal","data":[{"cut":"Ideal","colorv":"D","n":2834,"y":2834,"name":"D"},{"cut":"Ideal","colorv":"E","n":3903,"y":3903,"name":"E"},{"cut":"Ideal","colorv":"F","n":3826,"y":3826,"name":"F"},{"cut":"Ideal","colorv":"G","n":4884,"y":4884,"name":"G"},{"cut":"Ideal","colorv":"H","n":3115,"y":3115,"name":"H"},{"cut":"Ideal","colorv":"I","n":2093,"y":2093,"name":"I"},{"cut":"Ideal","colorv":"J","n":896,"y":896,"name":"J"}],"type":"column"}],"xAxis":{"type":"category","title":{"text":"color"},"categories":null},"subtitle":{"text":"Source: Diamonds data set"},"tooltip":{"shared":true,"formatter":"function(tooltip){\n          function isArray(obj) {\n          return Object.prototype.toString.call(obj) === '[object Array]';\n          }\n\n          function splat(obj) {\n          return isArray(obj) ? obj : [obj];\n          }\n\n          var items = this.points || splat(this), series = items[0].series, s;\n\n          // sort the values\n          items.sort(function(a, b){\n          return ((a.y < b.y) ? -1 : ((a.y > b.y) ? 1 : 0));\n          });\n          items.reverse();\n\n          return tooltip.defaultFormatter.call(this, tooltip);\n        }","useHTML":true,"headerFormat":"<small>{point.key}<\/small><table>","pointFormat":"<tr><td style=\"color: {series.color}\">{series.name}: <\/td><td style=\"text-align: right\"><b>{point.y}<\/b><\/td><\/tr>","footerFormat":"<\/table>"},"caption":{"text":"This is a caption text to show the style of this type of text"}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
 </div>
 </div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 
 
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden">
 
-</main> <!-- /main -->
+</div>
+</div>
+
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -610,6 +639,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </footer>
 
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
+</script>
+  
 
 
 

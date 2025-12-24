@@ -14,7 +14,7 @@ website:
       - text: Data Viz
         href: dashboard.qmd
       - text: Blog
-        href: blog/
+        href: blog
 
 format:
   html:
